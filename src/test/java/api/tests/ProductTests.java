@@ -83,8 +83,6 @@ public class ProductTests {
     }
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с продуктами")
     @DisplayName("Удаление продукта")
     void deleteProductTest() {
         DeleteResponseProductModel response = step("Удаляем продукт", () ->
