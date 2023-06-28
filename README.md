@@ -28,7 +28,12 @@
 Автотесты написаны на <code>Java</code> с использованием <code>JUnit 5</code> и <code>Gradle</code>.
 Для UI-тестов использована библиотека [Selenide](https://selenide.org/).
 Запуск тестов можно осуществлять локально или с помощью [Selenoid](https://aerokube.com/selenoid/).
-Также настроена сборка в <code>Jenkins</code> с формированием Allure-отчета и отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
+Также настроена сборка в <code>Jenkins</code>: 
+* с формированием Allure-отчета,
+* с интеграцией с Allure TestOps,
+* c интеграцией с Jira,
+* c отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
+
 
 ## :bookmark_tabs: Список тестов:
 ### API тесты для Fake Store API
