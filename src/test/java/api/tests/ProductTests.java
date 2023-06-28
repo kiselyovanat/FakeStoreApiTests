@@ -23,11 +23,10 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Feature("Тестирование методов взаимодействия с продуктами")
 public class ProductTests {
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с продуктами")
     @DisplayName("Получение одного продукта")
     void getSingleProductTest() {
         GetProductModel response = step("Делаем запрос на получение продукта с id=5", () ->
@@ -50,8 +49,6 @@ public class ProductTests {
     }
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с продуктами")
     @DisplayName("Добавление продукта")
     void addProductTest() {
         Faker faker = new Faker(new Locale("en"));

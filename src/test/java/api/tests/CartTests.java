@@ -20,11 +20,10 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Feature("Тестирование методов взаимодействия с корзинами")
 public class CartTests {
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с корзинами")
     @DisplayName("Получение одной корзины")
     void getSingleCartTest() {
         CartModel response = step("Делаем запрос на получение корзины с id=5", () ->
@@ -42,8 +41,6 @@ public class CartTests {
     }
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с корзинами")
     @DisplayName("Добавление корзины юзеру")
     void addCartTest(){
         Faker faker = new Faker();
@@ -68,8 +65,6 @@ public class CartTests {
     }
 
     @Test
-    @Tag("APITest")
-    @Feature("FakeStoreApi - взаимодействие с корзинами")
     @DisplayName("Удаление корзины")
     void deleteCartTest() {
         CartModel response = step("Удаляем корзину", () ->
