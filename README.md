@@ -55,9 +55,9 @@ gradle clean test
 <img title="Jenkins Build" src="images/screenshots/jenkinsBuild.png">
 </p>
 
-1.  Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/18-kiselevanm-Jenkins-diploma/">**сборку в Jenkins**</a>
+1.  Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/18-kiselevanm-Jenkins-diploma-api/">**сборку в Jenkins**</a>
     * Для корректного открытия ссылки требуется авторизация на <a target="_blank" href="https://jenkins.autotests.cloud/">**jenkins.autotests.cloud**</a>
-2. В боковом меню выбрать пункт **"Собрать с параметрами"**;
+2. В боковом меню выбрать пункт **"Собрать сейчас"**;
 3. Выбрать параметры из выпадающего списка;
 4. Нажать кнопку **"Собрать"**;
 5. После прогона тестов в блоке **"История сборок"** появятся ссылки на **Allure-отчет** и на **Allure TestOps**.
@@ -105,9 +105,3 @@ gradle clean test
 <img width="70%" title="Telegram Notifications" src="images/screenshots/notificationExample.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Видео примера запуска теста в Selenoid
-
-К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
-<p align="center">
-  <img title="Selenoid Video" src="images/video/videoExample.gif">
-</p>
